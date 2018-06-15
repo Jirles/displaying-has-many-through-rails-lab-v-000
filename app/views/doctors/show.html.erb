@@ -15,6 +15,7 @@
     <% @doctor.appointments.each do |appt| %>
       <tr>
         <td><%= appt.readable_datetime %></td>
+        <td><%= link_to appt.patient.name, patient_path(appt.patient)%></td>
       </tr>
     <% end %>
   </tbody>
