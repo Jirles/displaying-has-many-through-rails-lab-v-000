@@ -3,6 +3,7 @@ class Patient < ActiveRecord::Base
   has_many :doctors, through: :appointments
 
   def appt_count
-    self.appointments.count 
+    self.appointments.count
   end
+  
 end
