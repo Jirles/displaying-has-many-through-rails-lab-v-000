@@ -14,7 +14,7 @@
     </tr>
     <% @doctor.appointments.each do |appt| %>
       <tr>
-        <td><%= %></td>
+        <td><%= appt.readable_datetime %></td>
       </tr>
     <% end %>
   </tbody>
