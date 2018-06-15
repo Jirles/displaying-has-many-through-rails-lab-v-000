@@ -12,5 +12,10 @@
       <td><em>Date</em></td>
       <td><em>Patient</em></td>
     </tr>
+    <% @doctor.appointments.each do |appt| %>
+      <tr>
+        <td><%= %></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
