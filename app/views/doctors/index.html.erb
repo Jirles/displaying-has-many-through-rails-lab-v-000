@@ -2,6 +2,6 @@
 
 <ul>
   <% @doctors.each do |doctor| %>
-    <li><%= link_to "Dr. #{doctor}, #{doctor.department} - #{pluralize("partients", doctor.patient_count)}"%></li>
+    <li><%= link_to "Dr. #{doctor.name}, #{doctor.department} - #{pluralize("partients", doctor.patient_count)}"%></li>
   <% end %>
 </ul>
