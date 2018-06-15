@@ -9,12 +9,12 @@
   <tbody>
     <tr>
       <td><em>Date</em></td>
-      <td><em>Patient</em></td>
+      <td><em>Doctor</em></td>
     </tr>
-    <% @doctor.appointments.each do |appt| %>
+    <% @patient.appointments.each do |appt| %>
       <tr>
         <td><%= appt.readable_datetime %></td>
-        <td><%= link_to appt.patient.name, patient_path(appt.patient)%></td>
+        <td><%= link_to appt.doctor.name, doctor_path(appt.doctor)%></td>
       </tr>
     <% end %>
   </tbody>
