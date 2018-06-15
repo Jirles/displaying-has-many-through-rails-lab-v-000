@@ -1,8 +1,8 @@
 class Appointment < ActiveRecord::Base
   belongs_to :doctor
-  belongs_to :patient 
+  belongs_to :patient
 
   def readable_datetime
-    self.
-  end 
+    self.appointment_datetime.strftime
+  end
 end
