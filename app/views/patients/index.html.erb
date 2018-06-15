@@ -1,1 +1,7 @@
 <h1>Seattle Grace Hospital - Patients </h1>
+
+<ul>
+  <% @patients.each do |patient| %>
+    <li><%= link_to "#{patient.name} - #{pluralize("partients", doctor.patient_count)}"%></li>
+  <% end %>
+</ul>
